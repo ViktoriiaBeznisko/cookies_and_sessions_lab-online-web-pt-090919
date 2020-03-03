@@ -1,15 +1,13 @@
+	<ul>  
+  <%= cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
 
-<ul><% carting.each do |item| %>
+<%= form_tag ({controller: 'products',
+    action: 'add',
+    method: 'post'}) do %>
 
-    <li><%= item %></li>
-
-<% end %></ul>
-
-<form action=<%= products_add_path %> method=post>
-
-    Add Item: 
-    <input type="text" id="product" name="product">
-
-    <input type="submit" value="add to cart">
-
-</form>
+  <input name=product>
+  <input type=submit value='add to cart'>
+<% end %> 
