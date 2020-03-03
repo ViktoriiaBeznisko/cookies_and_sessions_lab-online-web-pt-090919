@@ -4,11 +4,11 @@ require 'rails_helper'
 # the ProductsHelper. For example:
 
 describe ProductsHelper do
-  describe "string concat" do
-    it "concats two strings with spaces" do
-      expect(helper.concat_strings("this","that")).to eq("this that")
-    end
-  end
+  # describe "string concat" do
+  #   it "concats two strings with spaces" do
+  #     expect(helper.concat_strings("this","that")).to eq("this that")
+  #   end
+  # end
 end
 RSpec.describe ProductsHelper, type: :helper do
   pending "add some examples to (or delete) #{__FILE__}"
